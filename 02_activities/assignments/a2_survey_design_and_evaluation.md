@@ -40,30 +40,33 @@ For the **Canadian General Social Survey on Giving, Volunteering, and Participat
 
 ## Part A - Survey Design: 
 
-The number of your chosen topic: `#`
+The number of your chosen topic: `#1`
 
 Describe the purpose of your survey:
 ```
-write your answer here...
+The purpose of this survey is to identify the main reasons entry- and lower-level employees are leaving the company and the factors most affecting their job satisfaction. Results will be used to prioritize changes to many ereas of the company like policies, management practices, workload expectations, growth opportunities, and workplace supports that could reduce turnover and improve retention.
 ```
 
 Describe your target population, sampling frame, sampling units, and observational units:
 ```
-write your answer here...
+- Target population: All current entry- and lower-level employees at the company.
+- Sampling units: Individual employees (each eligible employee is one sampling unit).
+- Overall sampling strategy: Stratified random sampling to ensure representation across key groups likely tied to turnover—department/function, location, and tenure band (e.g., <6 months, 6–12 months, 1–3 years). for this senario, we will do by Departments (e.g., Engineering, Support, Sales, Marketing, HR, IT, etc.).Randomly sample within each stratum.
 ```
 
 Your 5-10 question survey:
 ```
-1. write your question here...
-2. write your question here...
-3. write your question here...
-4. write your question here...
-5. write your question here...
-6. write your question here... (optional)
-7. write your question here... (optional)
-8. write your question here... (optional)
-9. write your question here... (optional)
-10. write your question here... (optional)
+1. Overall, how satisfied are you with your job? (1 = Very dissatisfied, 5 = Very satisfied)
+2. How likely are you to leave the company in the next 6 months? (1 = Very unlikely, 5 = Very likely)
+3. My day-to-day responsibilities are clear. (1 = Strongly disagree, 5 = Strongly agree)
+4. My workload is manageable. (1 = Strongly disagree, 5 = Strongly agree)
+5. I receive helpful support and feedback from my manager. (1 = Strongly disagree, 5 = Strongly agree)
+6. I see a realistic path for growth or promotion here. (1 = Strongly disagree, 5 = Strongly agree)
+7. My pay and benefits feel fair for my role and responsibilities. (1 = Strongly disagree, 5 = Strongly agree)
+8. I feel respected and included on my team. (1 = Strongly disagree, 5 = Strongly agree)
+9. What are the top 2 reasons you would consider leaving? (Select up to 2)
+☐ Pay/benefits ☐ Workload ☐ Manager relationship ☐ Lack of growth ☐ Team culture ☐ Stress/burnout ☐ Role mismatch ☐ Scheduling/remote policy ☐ Other: ____
+10. What is one change the company could make that would most improve your experience? (Short answer)
 ```
 
 ## Part B - Survey Evaluation:
@@ -71,7 +74,80 @@ Your 5-10 question survey:
 Identify and describe survey features:
 
 ```
-write your answer here
+1. Sample type:
+A stratified probability sample with a two-stage design: (1) sampled units are groups of telephone numbers linked to addresses; (2) one eligible person (15+) is randomly selected within the household. It also used “rejective sampling” (a form of sub-sampling) where all volunteers complete the long interview, while non-volunteers are randomly split into long vs short interview groups.
+
+2. Sample size: 
+
+Field sample: approximately 50,000 units (with ~40,000 invitation letters to the electronic questionnaire sent); Achieved analytic sample (reported in a StatCan analysis article using the 2018 GSS-GVP): 16,149 respondents.
+
+3. arget population:
+
+All persons 15 years and older living in the 10 provinces, excluding full-time residents of institutions.
+
+4. Sampling frame:
+
+A frame combining landline + cellular telephone numbers drawn from the Census and administrative sources, linked with Statistics Canada’s dwelling frame; frame records are telephone-number groups associated with an address (or a single number if not linkable).
+
+5. Survey mode(s)
+
+Data were collected either by:
+- Electronic questionnaire (online / EQ), or
+- CATI (computer-assisted telephone interviewing)
+
+6. Timeline
+
+Reference period: past 12 months preceding the interview date
+Collection window (Cycle 33, 2018): September 4, 2018 to December 28, 2018
+The survey is conducted every 5 years (Sept–Dec) per the program description.
+
+7. Response rate
+
+Overall response rate: 41.9%.
+
+8. Weights
+
+Main person weight: WGHT_PER (for person-level estimates).
+Bootstrap weights are provided for design-based variance estimation.
+
+Weight adjustments include:
+- adjustment for the rejective sampling/sub-sampling of non-volunteers,
+- calibration to independent age-sex-by-province controls,an adjustment so the weighted income distribution matches the 2017 CIS distribution by province.
+
+9. Data processing
+
+Processing used Statistics Canada’s SSPE generalized processing steps, with a structured environment to monitor processing and follow harmonized business processes.
+
+10. Cleaning, imputation, etc.
+
+Edits: automated and manual edits at macro/micro levels, including family/relationship checks, consistency checks, and flow edits; CATI included built-in range/flow edits during the interview.
+
+Imputation: mostly donor (nearest-neighbour/score) imputation, with mean imputation used where donor imputation wasn’t possible.
+
+Income: in 2018, personal income questions were not asked; income was obtained via linkage to tax data for respondents who did not object, and remaining missing income was imputed.
+
+11. Sources of error
+
+Statistics Canada explicitly notes both:
+
+- Sampling error (variance estimation supported via bootstrap), and
+- Non-sampling error, including coverage error (e.g., households without telephones or not covered by the frame), non-response, response error, and processing error.
+
+12. Limitations / known biases
+
+- Coverage limitations because the surveyed population excludes households without telephones (and any not covered by the telephone frame), which can introduce bias if excluded households differ systematically.
+
+- Non-response bias risk (mitigated by weight adjustments, including modelling using admin characteristics of non-responding households).
+
+- Comparability concerns vs earlier cycles, because 2018 introduced an Internet option and other content/mode-related changes (StatCan flags comparability issues in its “main changes” documentation).
+
+13. Links to documentation / sources used
+
+https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&Id=796234
+https://www150.statcan.gc.ca/n1/en/catalogue/45250011
+https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getMainChange&Id=143876&utm_source=chatgpt.com
+https://www150.statcan.gc.ca/n1/pub/75-006-x/2021001/article/00002-eng.htm?utm_source=chatgpt.com
+
 ```
 
 ## Rubric
